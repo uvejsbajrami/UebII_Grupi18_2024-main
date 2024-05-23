@@ -20,3 +20,21 @@ if($action == 'get_doctors' && $method == 'GET') {
 
     echo json_encode(['doctors' => $doctors]);
 }
+
+
+// Action: Get user Doctors
+// HTTP verb: GET
+// URL: http://localhost/mbrojtja_e_projektit/UebII_Grupi18_2024-main/api.php?action=get_user_doctors
+
+if($action == 'get_user_doctors' && $method == 'GET') {
+    $user_doctors = []; 
+
+    $user_doctors_stm = $pdo->prepare("SELECT `id`, `name`, `lastname`, `email` ,`position`
+FROM users WHERE `position` = 'Doctor'");
+    $user_doctors_stm->execute();
+    while($row = $user_doctors_stm->fetch(PDO::FETCH_ASSOC)) {
+            $user_doctors[] = $row;
+    }
+
+    echo json_encode(['user_doctors' => $user_doctors]);
+}

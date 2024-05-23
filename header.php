@@ -44,7 +44,8 @@
 
 
    <?php if(isset($_SESSION['user_id'])): ?>
-      <li><a href="newEmail.php" class="btn btn-secondary">Update Email</a></li> 
+      <li><a href="newEmail.php" class="btn btn-secondary">Update Email</a></li>
+      <li><a href="XMLrequest.php" class="btn btn-secondary">Update User</a></li> 
       <li><a href="logout.php" class="btn btn-secondary">LogOut</a></li> 
 
    <?php else: ?>
@@ -53,7 +54,7 @@
    <?php endif; ?>
  
        <!-- Button trigger modal -->
-<li<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
 </button>
 
