@@ -22,7 +22,7 @@ if (isset($_POST['register'])) {
     $name = $_POST['name'];
     $lastname = $_POST['lastname'];
     $position = $_POST['position'];
-    $email = $_POST['email'];
+    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     $password = $_POST['password'];
     $password = md5($password); 
 

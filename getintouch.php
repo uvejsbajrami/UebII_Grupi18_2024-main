@@ -7,7 +7,7 @@
          </div>
          <div class="contact-section">
             <div class="form-contant">
-            <form id="ajax-contact" action="mailer.php" method="post">
+     <form id="ajax-contact" action="mailer.php" method="post">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="form-group"> 
+                <div class="form-group">
                     <textarea class="form-control" name="message" rows="5" placeholder="Message" required="required"></textarea>
                 </div>
                 <div class="actions">

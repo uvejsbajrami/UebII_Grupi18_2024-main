@@ -40,7 +40,7 @@
    <li><a data-scroll href="#price">Price</a></li>
    <li><a data-scroll href="#testimonials">Testimonials</a></li>
    <li><a data-scroll href="#getintouch">Contact</a></li>
-   <li><a data-scroll href="users_fetch.php">Doctors</a></li>
+   <li><a data-scroll href="users_fetch.php">Doctors List</a></li>
 
 
    <?php if(isset($_SESSION['user_id'])): ?>
