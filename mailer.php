@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
 
         
-        $mail->setFrom($from, 'Emri Juaj');
+        $mail->setFrom($from, $name);
         $mail->addAddress($to);
 
         
